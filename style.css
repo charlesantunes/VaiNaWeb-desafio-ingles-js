@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: darksalmon;
+    background: fixed;
+    background-image: url(img/WhatsApp\ Image\ 2022-06-08\ at\ 18.09.30.jpeg);
+    background-size: 100%;
+}
+
+h1 {
+    color: cyan;
+    font-weight: 300;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 8vh;
+    filter: drop-shadow(0px 0px 2px red);
+    animation: h1 2s infinite alternate ease-in-out;
+}
+h4{
+    text-align: center;
+}
+
+@keyframes h1 {
+    from {
+        filter: drop-shadow(0px 0px 10px #ffffff);
+    }
+
+    to {
+        filter: drop-shadow(4px 10px 8px #ff8f8f);
+    }
+}
+
+.arrays {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    border-radius: 10px;
+    animation: neon 2s infinite alternate ease-in-out;
+}
+
+.arrays img {
+    border-radius: 30px;
+    width: 50%;
+}
+
+@keyframes loading {
+    0% {
+        filter: hue-rotate(30deg) opacity(0.7) drop-shadow(0 0 0 red);
+        filter: drop-shadow(0px 0px 10px #ffffff);
+    }
+
+    100% {
+        filter: hue-rotate(180deg) opacity(0.4) drop-shadow(0 0 0 rgb(38, 38, 163));
+        filter: drop-shadow(4px 10px 8px red);
+    }
+}
+
+.arrays {
+    animation: loading 1s linear infinite;
+}
+
+figcaption {
+    position: absolute;
+    top: 85%;
+    font-size: 2rem;
+    animation: h4 2s infinite alternate ease-in-out;
+}
+@keyframes h4 {
+    from {
+        filter: drop-shadow(0px 0px 10px #ffffff);
+    }
+
+    to {
+        filter: drop-shadow(4px 10px 8px #ff8f8f);
+    }
+}
+
+h2,
+#msg {
+    text-align: center;
+    padding-bottom: 2vw;
+    text-transform: uppercase;
+    color: cyan;
+}
+
+#msg {
+    color: #FFFFFF;
+    margin: 2vh 0 9vh 0;
+    font-size: 1rem;
+}
+
+h3 {
+    text-align: center;
+    padding-bottom: 2vw;
+    text-transform: uppercase;
+    color: red;
+    font-size: 2rem;
+}
+
+.solucao {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1vh;
+    margin-top: 10vh;
+}
+
+.msgLeft {
+    width: 192px;
+    position: relative;
+    left: 0%;
+    animation: msgLeft 4s linear infinite;
+}
+
+@keyframes msgLeft {
+
+    10%,
+    30% {
+        left: 30.5%;
+        filter: hue-rotate(30deg);
+    }
+
+    50% {
+        filter: hue-rotate(90deg);
+    }
+}
+
+.msgRight {
+    width: 225px;
+    position: relative;
+    right: 0%;
+    animation: msgRight 4s linear infinite;
+}
+
+@keyframes msgRight {
+
+    10%,
+    30% {
+        right: 30.5%;
+        filter: hue-rotate(30deg);
+    }
+
+    50% {
+        filter: hue-rotate(90deg);
+    }
+}
+
+
+form {
+    width: 70%;
+    height: 40vw;
+    position: relative;
+    left: 15%;
+    right: 15%;
+}
+
+fieldset {
+    padding: 0 2% 0 2%;
+}
+
+legend {
+    text-align: center;
+    font-size: 1.8vw;
+    color: cornflowerblue;
+}
+
+p {
+    padding-top: 1vh;
+}
+
+.pergunta {
+    color: green;
+    margin-top: 2vh;
+    ;
+}
+
+p:hover {
+    box-shadow: 0.5px 0.5px 10px white;
+}
+
+hr {
+    margin-bottom: 2vh;
+}
+
+.tipo {
+    color: cornflowerblue;
+}
+
+.console {
+    color: aquamarine;
+}
+
+.log {
+    color: darkkhaki;
+}
+
+.saida p {
+    color: #FFFFFF;
+}
+
+.if-else {
+    color: rgb(236, 92, 236);
+}
